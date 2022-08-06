@@ -1,0 +1,40 @@
+/*sticky navbar*/
+.nav{
+    background-color: limegreen;
+    position: relative;
+    top: 0;
+    overflow: auto;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+div.nav  li{
+    display: block;  
+}
+
+li > a{
+    text-decoration: none;
+    color: azure;
+    border-bottom: 1px solid forestgreen;
+    display: block;
+    
+}
+li >a:hover{
+    background-color: forestgreen;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul.menu li:last-child{
+    float: right;
+
+}
+/* flex*/
+.column{
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}

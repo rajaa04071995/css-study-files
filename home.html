@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" media="(max-width:600px)" href="styles/mediastyles.css">
+        <title>Home</title>
+        
+
+    </head>
+    <body id="body">
+        <h1 class="main">Content With All CSS Concepts</h1>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flex">CSS Flex</a></li>
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#animation">CSS Animation</a></li>
+                <li><a href="#masking">Masking</a></li>
+                <li><a href="#js">JS Button</a></li>
+                <li><a href="#body"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            </ul>
+        </div><br>
+        <div style="padding: 10px;" id="home">
+            <h1 class="capital">concept with multiple column</h1>
+            <br>
+            <div class="multiple_col">
+                Students & Writers mostly look for some questions when coming to 
+                paragraph writing about any topic or thing or person. 
+                The questions raised by most of the students while thinking about writing a paragraph are 
+                Paragraph Writing Examples, What is the perfect paragraph format? How many steps 
+                involved to write a paragraph? How to write a good paragraph? <span> How many</span> sentences 
+                are included in a para? and many more like these.
+                The questions raised by most of the students while thinking about writing a paragraph are 
+                Paragraph Writing Examples
+            </div>
+        </div>
+        <div id="flex">
+            <br>
+            <h1 class="capital">flex concept with transformation</h1><br>
+            <div class="row">
+                
+                <div class="column">
+                    <a href="images/falls2.jpg" target="_blank"><img src="images/falls2.jpg" alt="falls" class="image"></a>
+                    <a href="images/mist.jpg" target="_blank"><img src="images/mist.jpg" alt="mist" class="image"></a>
+                    <a href="images/nature.jpg" target="_blank"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/paris.jpg" target="_blank"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                    <a href="images/rocks.jpg" target="_blank"><img src="images/rocks.jpg" alt="rocks" class="image"></a>
+                    <a href="images/paris.jpg" target="_blank"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                </div>
+                <div class="column">
+                    <a href="images/underwater.jpg"><img src="images/underwater.jpg" alt="underwater" class="image"></a>
+                    <a href="images/wedding.jpg"><img src="images/wedding.jpg" alt="wedding" class="image"></a>
+                    <a href="images/nature.jpg"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/paris.jpg"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                    <a href="images/rocks.jpg"><img src="images/rocks.jpg" alt="rocks" class="image"></a>
+                </div>
+                <div class="column">
+                    <a href="images/nature.jpg"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/paris.jpg"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                    <a href="images/rocks.jpg"><img src="images/rocks.jpg" alt="rocks" class="image"></a>
+                    <a href="images/nature.jpg"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/paris.jpg"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                    <a href="images/mist.jpg"><img src="images/mist.jpg" alt="mist" class="image"></a>
+                    
+                </div>
+                <div class="column">
+                    <a href="images/falls2.jpg"><img src="images/falls2.jpg" alt="falls" class="image"></a>
+                    <a href="images/nature.jpg"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/nature.jpg"><img src="images/nature.jpg" alt="nature" class="image"></a>
+                    <a href="images/paris.jpg"><img src="images/paris.jpg" alt="paris" class="image"></a>
+                    <a href="images/rocks.jpg"><img src="images/rocks.jpg" alt="rocks" class="image"></a>
+                    <a href="images/falls2.jpg"><img src="images/falls2.jpg" alt="falls" class="image"></a>
+                </div>
+
+            </div>
+        </div>
+        
+        <br>
+        <div id="counter">
+            <h1 class="capital">list with counter concept</h1><br>
+            <ul>
+                <li class="counter">CSS</li>
+                <li class="counter">Javascript</li>
+                <li class="counter">HTML</li>
+                <li class="counter">JAVA</li>
+            </ul>
+        </div><br>
+        <div id="animation">
+            <h1 class="capital">cSS animation</h1><br>
+            <div class="img" style="padding-bottom:120px ;">
+                <img src="images/car.png" alt="car" height="15%" width="30%" class="img_animation">
+            </div>
+        </div>
+        <br>
+        <div id="masking">
+            <h1 class="capital">image masking</h1><br>
+            <div class="masking1">
+                <img class="masking"  id="masking1" src="images/bgmask.jpg" width="100%" height="500px">
+            </div>
+        </div>
+        <br>
+        <div id="js" class="button">
+            <button class="button1" onclick="changeBgcolor()">Click Here To Change Color</button>
+        </div><br>
+    </body>
+</html>
+<script>
+    function changeBgcolor(){
+        var element=document.querySelector('.button');
+        var style=getComputedStyle(element);
+        var bgcolor=style.backgroundColor;
+        element.style.backgroundColor='limegreen';
+    }
+</script>
